@@ -1,0 +1,114 @@
+.userList
+	width: 360px
+	display: flex
+	flex-direction: column
+	border-right: 1px solid #EBEBEB
+	position: relative
+
+	.menu
+		background-image: url('/images/Menu.png')
+		width: 25px
+		height: 15px
+		left: 10px
+		margin: 15px
+		top: 10px
+		position: absolute
+		background-repeat: no-repeat
+		background-size: 25px 15px
+
+	.chatTitle
+		height: 60px
+		display: flex
+		justify-content: center
+		align-items: center
+		font-family: 'Karla', sans-serif
+		cursor: pointer
+		color: #fff
+		background-color: #000
+
+	.list
+		padding: 0 25px
+		overflow: scroll
+		background-color: #fff
+		background: url('/images/bg.png')
+		background-size: 360px 560px
+		height: 100%
+
+		ul
+			width: 100%
+			padding: 20px
+
+			li
+				list-style: none
+				cursor: pointer
+				display: flex
+				flex-direction: column
+				cursor: pointer
+				background-color: #fff
+				box-shadow: 0 40px 50px 0 rgba(0,0,0,0.20)
+
+				.separator
+					border-bottom: 1px solid #EBEBEB
+					height: 1px
+					width: 80%
+					margin: 0 auto
+
+				a
+					text-decoration: none
+					display: flex
+					align-items: center
+					cursor: pointer
+					padding: 20px 30px
+
+					span
+						font-family: 'Karla', sans-serif
+						cursor: pointer
+
+		.userBlock
+			display: flex
+			flex-direction: column
+			position: relative
+			width: 100%
+
+			span
+				font-family: sans-serif
+				cursor: pointer
+
+			.preview
+				padding-top: 5px
+				font-weight: 300
+				font-size: 15px
+				color: #737373
+				overflow: hidden
+				text-overflow: ellipsis
+				width: 150px
+
+			.time
+				position: absolute
+				right: 15px
+				font-weight: 100
+				color: #d6d1d1
+				font-size: 15px
+				top: 13px
+
+	.regButton
+		background-color: #0884FF
+		position: absolute
+		color: #89ceffa6
+		text-transform: uppercase
+		position: absolute
+		width: 100%
+		bottom: 0
+		height: 60px
+		display: flex
+		justify-content: center
+		align-items: center
+		cursor: pointer
+
+		span
+			font-family: sans-serif
+			font-weight: 300
+			text-decoration: none !important
+			cursor: pointer
+			color: #FFFFFF
+

@@ -1,0 +1,120 @@
+.chat
+	display: flex
+	width: 360px
+	flex-direction: column
+	justify-content: space-between
+	position: relative
+	font-family: 'Karla', sans-serif
+	font-weight: 100
+	background: url('../images/bg.png')
+
+	.title
+		height: 60px
+		width: 360px
+		display: flex
+		justify-content: center
+		align-items: center
+		font-family: sans-serif
+		cursor: pointer
+		color: #fff
+		background-color: #000
+		
+		.arrowWrap
+			padding: 20px
+			position: absolute
+			left: 0px
+			top: 3px
+			cursor: pointer
+
+			.arrowBack
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 7.5px 15px 7.5px 0
+				border-color: transparent #fff transparent transparent
+
+	form
+
+		input
+			font-size: 15px
+			font-family: sans-serif
+			border: 0
+			border-radius: 0
+			width: 335px
+			padding-left: 24px
+			height: 60px
+			background-color: #000
+
+		input:focus
+			outline: 0
+			color: #fff
+
+		input::placeholder
+			border: 0
+			font-family: 'Karla', sans-serif
+			font-weight: 100
+			color: #fff
+
+		input::-webkit-input-placeholder
+			opacity: 1
+			transition: opacity 0.3s ease
+
+		input:focus::-webkit-input-placeholder
+			opacity: 0
+			transition: opacity 0.3s ease
+
+	.messages
+		bottom: 62px
+		position: absolute
+		max-width: 700px
+		overflow-y: scroll
+		overflow-x: unset
+		max-height: 528px
+		width: 100%
+
+		ul
+
+			.listItem
+				list-style: none
+				cursor: pointer
+				display: flex
+				flex-direction: column
+				cursor: pointer
+				background-color: #fff
+				box-shadow: 0 40px 50px 0 rgba(0,0,0,0.20)
+				max-width: 160px
+				margin: 20px
+				max-height: 1000px
+				padding: 20px
+
+				&_your
+					margin-left: 135px
+
+				.message
+					max-width: 675px
+					display: block
+					word-wrap: break-word
+					font-family: sans-serif
+					line-height: 1.7
+					font-weight: 300
+
+					span
+						font-size: 20px
+						font-family: sans-serif
+						color: #2381CC
+						font-weight: 300
+
+					.you
+						font-size: 9px
+						margin-left: 3px
+
+	.arrow
+		background: url('../images/Button.png')
+		width: 86px
+		height: 68px
+		position: absolute
+		background-repeat: no-repeat
+		bottom: 29px
+		right: 21px
+		background-size: 110px
+		cursor: pointer

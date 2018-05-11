@@ -1,0 +1,80 @@
+.accountContainer
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-top: 25px
+
+	.wrapper
+		width: 320px
+		height: 610px
+		background-image: url('images/Logo.png')
+		background-size: 360px 560px
+		border-radius: 1px
+		box-shadow: 0 2px 4px 0 rgb(239, 239, 239), 0 2px 4px 0 rgba(0,0,0,0.05), 0 0 2px 0 rgba(0,0,0,0.05)
+		display: flex
+		justify-content: flex-end
+		flex-direction: column
+		padding: 20px
+
+		input
+			-webkit-box-shadow: inset 0 0 0 50px #fff
+			-webkit-text-fill-color: #000
+
+		.regForm
+			background-color: #FFF
+			height: 230px
+			border-radius: 1px
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.18), 0 2px 4px 0 rgba(0,0,0,0.05), 0 0 2px 0 rgba(0,0,0,0.05)
+			display: flex
+			flex-direction: column
+			transition: all 0.5s ease-out
+			justify-content: space-between
+
+			&_on
+				height: 290px
+			
+			.forms
+				height: 170px
+				background-color: #fff
+				display: flex
+				flex-direction: column
+				padding: 0 20px
+				transition: all 0.5s ease-out
+
+				&_on
+					height: 230px
+
+				.email
+					opacity: 0
+					transition: all 0.5s ease-out !important
+					height: 0 !important
+
+					&_on
+						transition: all 0.5s ease-out !important
+						height: 72px !important
+						opacity: 1
+
+		.create
+			margin-top: 25px
+			display: flex
+
+			.account
+				margin-left: 10px
+				cursor: pointer
+				font-family: 'Karla', sans-serif
+				text-decoration: underline
+
+.button
+	height: 40px
+	background-color: #00A0FF
+	display: flex
+	padding: 10px
+	justify-content: center
+	align-items: center
+	font-family: 'Karla', sans-serif
+	color: #fff
+	cursor: pointer
+	margin-top: 5px
+
+
+
